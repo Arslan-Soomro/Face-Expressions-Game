@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Face Detector</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Face Detector</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button id="start_btn">Start</button>
 
-        <button id="start_btn">Start</button>
+    <div id="score_box">
+      <h1>Score: <span id="score_num">0</span></h1>
+    </div>
 
-        <div id="score_box">
-            <h1>Score: <span id="score_num">0</span> </h1>
-        </div>
+    <h1 id="emotion_teller" style="margin-left: 50px; margin-top: 10px">
+      Emotion
+    </h1>
 
-        <h1 id="emotion_teller" style="margin-left: 50px; margin-top: 10px;">Emotion</h1>
-        
-        <div id="center">
-            <div id="emojiPlate"></div>
-            <video id="faceCam" height="560" width="720" autoplay muted></video>
-        </div>
+    <div id="center">
+      <div style="margin-bottom: 20px">
+        <h1>Emotion Detector Game</h1>
+      </div>
+      <div id="emojiPlate"></div>
+      <video id="faceCam" height="560" width="720" autoplay muted></video>
+    </div>
 
-        
-        
-        <script src="scripts/face-api.min.js"></script>
-        <script src="scripts/globals.js"></script>
-        <script src="scripts/initFaceCam.js"></script>
-        <script src="scripts/emotionTools.js"></script>
-        <script src="scripts/gameTools.js"></script>
-        <script src="scripts/main.js"></script>
-        <script src="scripts/experiGame.js"></script>
-    </body>
+    <script src="scripts/face-api.min.js"></script>
+    <script src="scripts/globals.js"></script>
+    <script src="scripts/initFaceCam.js"></script>
+    <script src="scripts/emotionTools.js"></script>
+    <script src="scripts/gameTools.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/experiGame.js"></script>
+  </body>
 </html>
